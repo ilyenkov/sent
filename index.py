@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'xead'
 from sentiment_classifier import SentimentClassifier
-#from codecs import open
+from codecs import open
 #import time
 from flask import Flask, render_template, request
 app = Flask(__name__)
@@ -17,11 +17,11 @@ def index_page(text="", prediction_message=""):
     if request.method == "POST":
         text = request.form["text"]
         #logfile = open("ydf_demo_logs.txt", "a", "utf-8")
-	print text
+	#print text
 	#print >> logfile, "<response>"
 	#print >> logfile, text
         prediction_message = classifier.get_prediction_message(text)
-        print prediction_message
+        #print prediction_message
 	#print >> logfile, prediction_message
 	#print >> logfile, "</response>"
 	#logfile.close()
