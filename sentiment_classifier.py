@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'xead'
 from sklearn.externals import joblib
-import os
+#import os
 
 
 class SentimentClassifier(object):
