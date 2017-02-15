@@ -10,7 +10,7 @@ MarkupSafe==0.23
 numpy==1.11.3
 python-dateutil==1.5
 requests==2.12.4
-scikit-learn==0.18.1
+scikit-learn==0.18.0
 scipy==0.18.1
 sklearn==0.0
 visitor==0.1.3
