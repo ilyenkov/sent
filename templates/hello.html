@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<title>Классификатор отзывов на мобильные телефоны</title>
+
+<div style="text-align: center; font-family:'Calibri'">
+<font size="5" color="black">
+
+<p>Добро пожаловать в классификатор отзывов на мобильные телефоны!</p>
+
+</font>
+</div>
+
+<div style="text-align: center; font-family:'Calibri'">
+<p>Он умеет классифицировать тестовые примеры из соревнования на Kaggle со стопроцентной точностью. Не верите?</p>    
+</div>
+
+<div style="text-align: center; font-family:'Calibri'">
+<form action="{{ url_for('index_page') }}" method=post>
+    <dl>
+        <dt>Тогда быстрее вводите ваш отзыв:<br>
+        <br>        
+        <dd><textarea name=text rows=20 cols=120>{{ text }}</textarea>
+        <br>
+        <br>
+        <dd><input type=submit value="Классифицировать" style="text-align: center; font-family:'Calibri'">
+    </dl>
+</form>
+
+<br>Результат классификации: <strong>{{ prediction_message }}</strong> <br> 
+</div>
